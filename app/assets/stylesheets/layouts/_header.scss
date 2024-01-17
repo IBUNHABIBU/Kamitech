@@ -4,13 +4,13 @@
     max-width: 100vw;
     margin-left: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
+    flex-direction: column;
     z-index: 1;
 
     &__logo {
         font-size: $font-size-xl;
+        padding: 2rem 1rem;
+        background-color: red;
     }
     ul {
         list-style: none;
