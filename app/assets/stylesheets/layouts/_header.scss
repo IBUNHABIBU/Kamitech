@@ -11,6 +11,8 @@
         font-size: $font-size-xl;
         padding: 2rem 1rem;
         background-color: red;
+        display: flex;
+        justify-content: space-between;
     }
     ul {
         list-style: none;
