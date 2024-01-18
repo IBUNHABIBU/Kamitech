@@ -14,6 +14,14 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__toggle {
+        // display: none;
+        position: absolute;
+        font-size: 5rem;
+
+    }
+
     ul {
         list-style: none;
         
