@@ -22,7 +22,28 @@ $columns: 12;
 }
 
 @for $i from 1 through $columns {
-  .col-#{$i} {
-    flex: 0 0 100% / 12 * $i;
+
+  @include respond(desktop) {
+    .desktop-#{$i} {
+      flex: 0 0 100% / 12 * $i;
+    }
+  }
+
+  @include respond(tab-land) {
+    .tab-land-#{$i} {
+      flex: 0 0 100% / 12 * $i;
+    }
+  }
+
+  @include respond(tab-port) {
+    .tab-port-#{$i} {
+      flex: 0 0 100% / 12 * $i;
+    }
+  }
+
+  @include respond(phone) {
+    .phone-#{$i} {
+      flex: 0 0 100% / 12 * $i;
+    }
   }
 }
