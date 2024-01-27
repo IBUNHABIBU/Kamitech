@@ -1,4 +1,6 @@
-// Entry point for your Sass build
+// Components
+@import "@fortawesome/fontawesome-free/css/all";
+
 // Mixins
 @import "mixins/media";
 @import "mixins/width_and_height";
@@ -7,7 +9,6 @@
 @import "config/variables";
 @import "config/reset";
 
-// Components
 @import "components/button";
 @import "components/error_message";
 @import "components/form";
