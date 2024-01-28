@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'kashg', to: 'cpanel#index', as: 'kashg'
+  resources :hero_images
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

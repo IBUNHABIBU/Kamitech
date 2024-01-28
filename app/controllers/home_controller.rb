@@ -1,3 +1,5 @@
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @hero_images = HeroImage.all
+  end
 end

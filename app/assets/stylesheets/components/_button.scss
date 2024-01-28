@@ -1,5 +1,5 @@
 .btn {
-    background-color: $color-text-section;
+    background-color: $color-white;
     width: 50%;
     outline: none;
     border: none;
@@ -13,4 +13,16 @@
     &--mid {
         width: 100%;
     }
+
+    &--small {
+       width: 20%;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
 }
