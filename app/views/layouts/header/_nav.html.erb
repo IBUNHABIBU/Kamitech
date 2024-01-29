@@ -1,9 +1,15 @@
 <header class="header">
-<div class="header__logo">
-      <%= link_to 'LOGO', root_path, class: "logo" %>
-      <i class="fa-brands fa-instagram"></i>
-    <div class="header__toggle">
-    </div>
+<div class="header__top">
+      <%= link_to root_path, class: "header__logo" do %>
+        <%= image_tag "Kamic.PNG", alt: "Logo" %>
+      <% end %>
+
+      <div class="header__icons" data-controller="humburger">
+          <div class="header__menu">
+              <span class="button open">&nbsp;</span>
+          </div>
+         <i class="fa-brands fa-instagram"></i>
+      </div>
 </div>
    <nav>
         <ul class="header__menu">
