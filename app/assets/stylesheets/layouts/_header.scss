@@ -22,11 +22,32 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        color: black;
+
+        a {
+            background-color: #555;
+            display: inline-block;
+            padding: 0.4rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+
+            i {
+                margin: 0.3rem;
+            }
+        }
     }
 
-    &__menu {
-        display: flex;
-        
+    &__btn {
+        display: none;
+
+        @include respond(phone) {
+            display: flex;
+        }
+
+        @include respond(tablet) {
+            display: flex;
+        }
         .button {
             position: relative;
             &,
