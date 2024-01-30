@@ -1,13 +1,24 @@
 .section {
-
     width: 100%;
     height: 100%;
-   
-
     h1 {
         font-weight: 700;
         line-height: $line-height-body;
         color: $color-text-section;
         text-transform: uppercase;
+    }
+
+    .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $space-m;
+        padding: $space-m;
+        background-color: $main-color;
+
+        h4 {
+            color: white;
+            font-size: $font-size-h4;
+        }
     }
 }

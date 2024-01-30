@@ -21,7 +21,6 @@ body {
   color: $color-white;
   line-height: $line-height-body;
   font-family: $font-family-lato;
-
   font-size: 62.5%;
 
   // @include respond(tab-land) {
@@ -90,8 +89,5 @@ a {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  margin-left: 0 auto;
 }
