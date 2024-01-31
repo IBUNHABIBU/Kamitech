@@ -10,16 +10,19 @@
 <div class="service">
     <h4>OUR SERVICES</h4>
     <div class="row">
-    <div class="desktop-3 tablet-6 mobile-12">
-        <div class="service__item">
-            <div class="service__content">
-                <h5 class="service__title">IT supply</h5>
-                <p class="service__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quisquam, voluptatibus.</p>
+    <% @ourservices.each do |service| %>
+        <div class="desktop-4 tablet-6 mobile-12">
+            <div class="service__item">
+                <%= image_tag service.image, class: "service__img" %>
+                <div class="service__content">
+                    <h5 class="service__title">
+                        <%= service.Title %>
+                    </h5>
+                    <p class="service__desc"><%= service.description %></p>
+                </div>
             </div>
         </div>
-    </div>
- 
+    <% end %>
     </div>
 </div>
 
