@@ -17,6 +17,25 @@
     &--small {
        width: 20%;
     }
+
+    &--main {
+        background-color: $main-color;
+        color: $color-white;
+    }
+
+    &--secondary {
+        background-color: $color-white;
+        color: black;
+    }
+
+    &--comp {
+      background-color: #276988;
+      color: $color-white;
+    }
+
+    &--border {
+        border: 1px solid #276988;
+    }
 }
 
 .btn-group {

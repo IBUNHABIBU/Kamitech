@@ -26,29 +26,27 @@ $columns: 12;
   flex-wrap: wrap;
 }
 
-@for $i from 1 through $columns {
+ @for $i from 1 through $columns {
 
-  @include respond(desktop) {
     .desktop-#{$i} {
       flex: 0 0 100% / 12 * $i;
     }
-  }
-
-  @include respond(tab-land) {
+  
     .tab-land-#{$i} {
-      flex: 0 0 100% / 12 * $i;
+      @include respond(tab-land) {
+        flex: 0 0 100% / $columns * $i;
+      }
     }
-  }
 
-  @include respond(tab-port) {
     .tab-port-#{$i} {
-      flex: 0 0 100% / 12 * $i;
+      @include respond(tab-port) {
+        flex: 0 0 100% / $columns * $i;
+      }
     }
-  }
 
-  @include respond(phone) {
     .phone-#{$i} {
-      flex: 0 0 100% / 12 * $i;
+      @include respond(phone) {
+        flex: 0 0 100% / $columns * $i;
+      }
     }
-  }
 }
