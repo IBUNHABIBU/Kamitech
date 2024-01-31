@@ -1,0 +1,11 @@
+<h2>Hello <%= current_user.email %><h2>
+<h3>welcome to Control Panel</h3>
+<div class="row">
+    <div class="desktop-6 tab-port-12 phone-12">
+    <div class="container">
+     <%= link_to "Create Hero Image", new_hero_image_path, class: "btn btn--small btn--comp" %>
+     <%= link_to "Create Services", new_ourservice_path, class: "btn btn--small btn--comp" %>
+     <%= link_to "Logout",  logout_path, method: :delete, class: "btn  btn--border" %>
+     </div>
+    </div>
+</div>

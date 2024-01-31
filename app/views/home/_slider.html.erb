@@ -1,0 +1,24 @@
+<div data-controller="slider" class="banner">
+    <div class="slider">
+        <% @hero_images.each do |hero_image| %>
+            <% hero_image.images.each do |image| %>
+                <%= image_tag image, class: "slider__img" %>
+            <% end %>
+        <% end %>
+    </div>
+
+    <div class="overlay">
+        <div class="row">
+            <div class="desktop-12 tab-land-3 tab-port-3 phone-12">
+                <div class="banner__text">
+                    <h2 class="banner-heading">Best Technology company in Tanzania</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                    <div class="btn-group">
+                        <button class="btn">learnmore</button>
+                        <button class="btn btn--mid btn--main">Get a Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.service {
+    margin-top: $space-xxl;
+    background-color: $color-white;
+    
+    h4 {
+        margin-bottom: $space-xl;
+        font-size: $font-size-xl;
+        font-weight: 500;
+        text-align: center;
+        color: #777;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: box-shadow 0.3s ease;
+        width: 100%;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+    }
+
+    &__content {
+        text-align: center;
+    }
+    &__title {
+        font-weight: 500;
+        color: #333;
+        font-size: $font-size-h4;
+        margin-bottom: 0.5rem;
+    }
+
+    &__img {
+        border-radius: 8px;
+        margin-bottom: 10px; //
+        // max-width: 6rem;
+        // width: 100%;
+        width: 28rem;
+        height: 20rem;
+        object-fit: cover;
+    }
+    &__desc {
+        color: #777;
+        font-size: $font-size-xs;
+    }
+}
+
