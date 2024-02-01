@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.17.1"
+lock "~> 3.18.0"
 
-set :application, "Kamitech"
+set :application, "kamich"
 set :repo_url, "git@github.com:IBUNHABIBU/Kamitech.git"
 
 set :rbenv_type, :user
