@@ -224,3 +224,10 @@ Credits go to
 ## 📝 License
 
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+
+DATABASE_URL=postgresql://postgres:Voda0763@127.0.0.1/kamich
+
+RAILS_MASTER_KEY=5fca69472d1d5d57e55c11a883b149c7
+MASTER_KEY_BASE:a7cc585726964d9713b75599ea8d30d596aa6d445f5a23ed1723d802db594e330f565898e127b236bbe47b8c2ec08bf74aed4e8010fa1f9446e60777bfc619c2
+
