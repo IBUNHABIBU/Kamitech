@@ -161,6 +161,7 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 | `EDITOR='code --wait' rails credentials:edit` | Edit credentials |
 
 <!-- ### How to play -->
+secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae85a0089d0059bab3e854f015ac9a142c27e0dcaba31b4a8ce17e49eb2c5bc24e99
 
 
 ### Challenges
@@ -211,6 +212,6 @@ This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 DATABASE_URL=postgresql://postgres:Voda0763@127.0.0.1/kamich
 
-RAILS_MASTER_KEY=5fca69472d1d5d57e55c11a883b149c7
-MASTER_KEY_BASE:a7cc585726964d9713b75599ea8d30d596aa6d445f5a23ed1723d802db594e330f565898e127b236bbe47b8c2ec08bf74aed4e8010fa1f9446e60777bfc619c2
+RAILS_MASTER_KEY=19c45e2a7f687df0ebfa4d20ebdbc8e7
+SECRET_KEY_BASE=a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae85a0089d0059bab3e854f015ac9a142c27e0dcaba31b4a8ce17e49eb2c5bc24e99
 
