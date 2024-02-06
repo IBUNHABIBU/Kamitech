@@ -1,7 +1,7 @@
 .form {
     position: relative;
     @include width_and_height(30%, 60vh);
-    background-color: $color-header-bg;
+    background-color: $main-color;
     overflow: hidden;
 
     &--mid {
@@ -36,7 +36,7 @@
     &__container {
         position: absolute;
         inset: 2px;
-        background-color: $color-header-bg;
+        background-color: $main-color;
         border-radius: 8px;
         z-index: 10;
         padding: 40px 50px;
@@ -72,7 +72,7 @@
                         span {
                             transform: translateX(-10px) translateY(-34px);
                             font-size: 0.8rem;
-                            color: $color-text-section;
+                            color: white;
                         }
                         i {
                             height: 90%;

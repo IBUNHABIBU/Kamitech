@@ -2,7 +2,7 @@
 lock "~> 3.18.0"
 
 set :application, "kamich"
-set :repo_url, "git@github.com:IBUNHABIBU/Kamitech.git"
+set :repo_url, "git@github.com:IBUNHABIBU/kamich.git"
 
 set :rbenv_type, :user
 set :rbenv_ruby, '3.0.1'

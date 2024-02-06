@@ -166,25 +166,8 @@ Navigate to the project folder make sure Rspec is installed and then run the fol
 ### Challenges
 1. 
 
-![screenshot](https://github.com/IBUNHABIBU/car-rent-booking-api/blob/dev/app/assets/Errors.PNG)
-      solution
-
-      bundle config --delete bin
-
-      bundle install --binstubs
-<!-- CONTACT -->
-
-2. Upload image in local was working but not in production
-
-it causes the error undefined cars for nil class
-
-Solution
-I removed the association btn user model and car model
-so instead of @car = current_user.cars.build(car_params)  I used @car = Car.new(car_params)
-
-3. Another cause of blocked by cors
-
-setting enviroment variables in heroku I used heroku config:set RAILS_MASTER_KEY = 'cat config/master.key' insead of using the backticks ``
+It seems like you're encountering an error related to SSH key authentication with the ed25519 key type in your Ruby application. The error message indicates that the ed25519 gem is missing, which is required for ssh-ed25519 support in net-ssh.
+Solution 
 
 ## Live link
 
