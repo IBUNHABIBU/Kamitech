@@ -324,7 +324,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
-  uri
+  uri (~> 0.13.0)
   web-console
   webdrivers
 
