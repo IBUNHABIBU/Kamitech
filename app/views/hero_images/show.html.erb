@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @hero_image %>
-<strong> Created by <%= current_user.email %> </strong>
+<strong> Created by <%= @hero_image.user.email %> </strong>
 <div>
   <%= link_to "Back to hero images", hero_images_path %>
 

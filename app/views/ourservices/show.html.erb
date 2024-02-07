@@ -2,7 +2,7 @@
 
 <%= render @ourservice %>
 
-<strong> Created by <%= current_user.email %> </strong>
+<strong> Created by <%= @ourservice.user.email %> </strong>
 <div>
   <%= link_to "Edit this ourservice", edit_ourservice_path(@ourservice), class: "btn" %> |
   <%= link_to "Back to ourservices", ourservices_path, class: "btn" %>

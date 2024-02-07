@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @project %>
-<strong>Created by: <%= current_user.email %> </strong>
+<strong>Created by: <%= project.user.email %> </strong>
 <div>
   <%= link_to "Edit this project", edit_project_path(@project), class: "btn" %> |
   <%= link_to "Back to projects", projects_path, class: "btn" %>
