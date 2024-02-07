@@ -170,6 +170,41 @@ secret_key_base: a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae8
 It seems like you're encountering an error related to SSH key authentication with the ed25519 key type in your Ruby application. The error message indicates that the ed25519 gem is missing, which is required for ssh-ed25519 support in net-ssh.
 Solution 
 
+add 
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
+2. 
+You have already activated uri 0.12.1, but your Gemfile requires uri 0.13.0. Prepending `bundle exec` to your command may solve this.
+
+Solution
+
+I removed the uri '0.12.1' in the vps using command 
+
+`gem list uri`
+gem list -d uri
+gem uninstall uri
+gem install uri -v '0.13.0'
+
+2.   01 rake aborted!
+      01 ActiveSupport::MessageEncryptor::InvalidMessage: ActiveSupport::MessageEncryptor::InvalidMessage
+
+      Solution
+
+      I deleted the credentials.yml.enc
+      and then I created again using the command `EDITOR='code --wait' rails credentias:edit`
+
+3. DEBUG [a7255b43] 	rake aborted!
+ DEBUG [a7255b43] 	ActiveRecord::NoDatabaseError: We could not find your database: kamich. Which can be found in the database configuration file located at config/database.yml.
+
+ solution
+
+ I created the database in the vps using the sql commands
+ 
+ `CREATE DATABASE kamich`;
+
+
+
 ## Live link
 
 [Live Demo ](https://final-car-rent-api.herokuapp.com/api/v1/cars) of the project
@@ -210,8 +245,29 @@ Credits go to
 This project is [MIT](https://opensource.org/licenses/MIT) licensed.
 
 
-DATABASE_URL=postgresql://postgres:Voda0763@127.0.0.1/kamich
+server {
 
-RAILS_MASTER_KEY=19c45e2a7f687df0ebfa4d20ebdbc8e7
-SECRET_KEY_BASE=a695950e10660b4b4d2593e66174883b929790c0c9ef4e8532d64e4878d1ae85a0089d0059bab3e854f015ac9a142c27e0dcaba31b4a8ce17e49eb2c5bc24e99
+  server_name kamich.darlive.cyou www.kamich.darlive.cyou;
+  root /home/deploy/colabapi/current/public;
 
+  passenger_enabled on;
+  passenger_app_env production;
+
+  location /cable {
+    passenger_app_group_name colabapi_websocket;
+    passenger_force_max_concurrent_requests_per_process 0;
+  }
+
+  # Allow uploads up to 100MB in size
+  client_max_body_size 100m;
+
+  location ~ ^/(assets|packs) {
+    expires max;
+    gzip_static on;
+  }
+
+    listen [::]:443 ssl; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/colabapi.darlive.cyou/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/colabapi.darlive.cyou/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot

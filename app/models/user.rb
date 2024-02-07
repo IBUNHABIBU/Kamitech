@@ -5,6 +5,9 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: { case_sensitive: false },
                     format: /\A\S+@\S+\z/
 
+  has_many :hero_images
+  has_many :ourservices
+  has_many :projects
     def self.authenticate(email, password)
         user = User.find_by(email: email)
         user && user.authenticate(password)
@@ -23,4 +26,6 @@ class User < ApplicationRecord
       self.remember_token = user.new_token
       update_attribute(:remember_digest)
     end
+
+
 end
