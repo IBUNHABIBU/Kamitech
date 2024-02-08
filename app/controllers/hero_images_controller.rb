@@ -66,6 +66,6 @@ class HeroImagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hero_image_params
-      params.fetch(:hero_image).permit(images: [], :user_id)
+      params.fetch(:hero_image).permit(images: [], user_id: [])
     end
 end
