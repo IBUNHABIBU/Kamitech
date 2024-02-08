@@ -22,6 +22,7 @@ class OurservicesController < ApplicationController
   # POST /ourservices or /ourservices.json
   def create
     @ourservice = Ourservice.new(ourservice_params)
+    @ourservice.user = current_user
 
     respond_to do |format|
       if @ourservice.save

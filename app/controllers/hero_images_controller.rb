@@ -22,6 +22,7 @@ class HeroImagesController < ApplicationController
   # POST /hero_images or /hero_images.json
   def create
     @hero_image = HeroImage.new(hero_image_params)
+    @hero_image.user = current_user
 
     respond_to do |format|
       if @hero_image.save
@@ -65,6 +66,6 @@ class HeroImagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def hero_image_params
-      params.fetch(:hero_image).permit(images: [])
+      params.fetch(:hero_image).permit(images: [], :user_id)
     end
 end
