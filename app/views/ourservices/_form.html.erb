@@ -1,3 +1,5 @@
+<div class="form form--mid">
+  <div class="form__container">
 <%= form_with(model: ourservice) do |form| %>
   <% if ourservice.errors.any? %>
     <div style="color: red">
@@ -30,3 +32,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+// Components
+@import "@fortawesome/fontawesome-free/css/all";
+
+// Mixins
+@import "mixins/media";
+@import "mixins/width_and_height";
+
+// Configuration
+@import "config/variables";
+@import "config/reset";
+
+@import "components/button";
+@import "components/error_message";
+@import "components/form";
+@import "components/slider";
+
+// Layouts
+@import "layouts/header";
+@import "layouts/section";
+@import "layouts/service";
+
+// add font-awesome
+
+

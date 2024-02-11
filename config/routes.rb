@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :partners
   resources :projects
   resources :ourservices
   get 'kashg', to: 'cpanel#index', as: 'kashg'
