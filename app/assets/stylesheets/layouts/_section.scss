@@ -1,6 +1,7 @@
 .section {
     width: 100%;
     height: 100%;
+
     h1 {
         font-weight: 700;
         line-height: $line-height-body;
@@ -24,15 +25,48 @@
 }
 
 .why {
-    background-image: linear-gradient(to right bottom, rgba(227, 235, 78, 0.322), rgba(34, 80, 230, 0.376)), url('../../images/techbg.jpg');   
-    background-size: cover; 
-    background-position: center;
-}
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    padding: 2rem;
 
-.title {
-    padding: 1rem;
-    margin: 1rem;
-    color: red;
-    background-color: yellowgreen;
-    
+    &__title {
+        text-transform: uppercase;
+        font-size: $font-size-h6;
+        color: white;
+        padding-bottom: 1rem;
+        border-bottom: 0.06rem solid goldenrod;
+        letter-spacing: 0.5rem;
+        padding-top: 2rem;
+        width: fit-content;
+    }
+
+    &__card {
+        display: flex;
+        margin: 1rem;
+        gap: 1rem;
+
+        .fa-phone-rotary, .fa-screwdriver-wrench,
+        .fa-hand-holding-circle-dollar
+         {
+            display: inline-block; 
+            border: 2px solid white; 
+            border-radius: 50%; 
+            font-size: 2rem;
+            padding: 2rem; 
+        }
+
+        h4 {
+            color: white;
+            font-size: $font-size-h6;
+        }
+
+        .content {
+            text-align: left;
+
+            p {
+                font-size: 0.8rem;
+                line-height: 1.2;
+            }
+        }
+    }
 }

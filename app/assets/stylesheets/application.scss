@@ -1,6 +1,4 @@
 // Components
-@import "@fortawesome/fontawesome-free/css/all";
-
 // Mixins
 @import "mixins/media";
 @import "mixins/width_and_height";
@@ -18,7 +16,4 @@
 @import "layouts/header";
 @import "layouts/section";
 @import "layouts/service";
-
-// add font-awesome
-
-
+@import 'layouts/footer';
