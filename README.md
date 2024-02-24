@@ -200,6 +200,8 @@ gem install uri -v '0.13.0'
  solution
 
  I created the database in the vps using the sql commands
+
+ when doing display none transision will not work
  
  `CREATE DATABASE kamich`;
 
