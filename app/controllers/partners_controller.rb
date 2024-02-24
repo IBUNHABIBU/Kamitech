@@ -22,6 +22,7 @@ class PartnersController < ApplicationController
   # POST /partners or /partners.json
   def create
     @partner = Partner.new(partner_params)
+    @partner.user = current_user
 
     respond_to do |format|
       if @partner.save
@@ -65,6 +66,6 @@ class PartnersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def partner_params
-      params.require(:partner).permit(:title, :user_id)
+      params.require(:partner).permit(:title, :user_id, :image)
     end
 end
