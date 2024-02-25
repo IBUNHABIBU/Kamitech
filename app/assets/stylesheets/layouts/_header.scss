@@ -111,11 +111,22 @@
         display: flex;
         align-items: center;
         @include respond(phone) {
+            // Display: none; allows no transition at all
+            // instead use opacity:0;
+            opacity: 0%;
+
+            // make it unaccessible to mouce and keyboard
+            // pointer-events: none;
+
+            //hide it from screen reader
+            // visibility: hidden;
+            transform: translateX(100%);
             position: relative;
             top: -2rem;
             left: 0;
             flex-direction: column;
             width: 100%;
+            transition: all 0.5s ease-in-out;
         }
         &__item {
             display: flex;
@@ -145,6 +156,27 @@
     }
 }
 
-.fa-mark, .fa-bars {
+.nav-open .header__menu {
+    @include respond(phone) {
+        
+    }
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.nav-open .fa-xmark {
+    display: block;
+}
+
+.nav-open .fa-bars {
+    display: none;
+}
+
+.fa-xmark, .fa-bars {
     color: #555;
+}
+
+.fa-xmark {
+    display: none;
 }
