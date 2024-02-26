@@ -13,6 +13,11 @@
         background-color: white;
         color: black;
         font-size: $font-size-xl;
+
+        @include respond(phone) {
+            padding-top: 1rem;
+            padding-bottom: 0;
+        }
     }
 
     &__logo {
@@ -120,8 +125,8 @@
 
             //hide it from screen reader
             // visibility: hidden;
-            transform: translateX(100%);
-            position: relative;
+            transform: translate(100%, -100%);
+            position: absolute;
             top: -2rem;
             left: 0;
             flex-direction: column;
@@ -157,12 +162,10 @@
 }
 
 .nav-open .header__menu {
-    @include respond(phone) {
-        
-    }
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
+  transform: translateX(0);
 }
 
 .nav-open .fa-xmark {
@@ -179,4 +182,8 @@
 
 .fa-xmark {
     display: none;
+}
+
+nav {
+    position: relative;
 }

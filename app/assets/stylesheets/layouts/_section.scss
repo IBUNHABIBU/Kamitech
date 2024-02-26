@@ -17,6 +17,17 @@
         padding: $space-m;
         background-color: $main-color;
 
+        @include respond(phone) {
+            flex-direction: column;
+        }
+
+        .btn--small {
+            @include respond(phone) {
+                width: 50%;
+                align-self: flex-end;
+            }
+        }
+
         h6 {
             color: white;
             font-size: $font-size-h6;
