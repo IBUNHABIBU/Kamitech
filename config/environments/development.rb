@@ -71,5 +71,7 @@ Rails.application.configure do
   if ENV['LIVERELOAD']
     config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
   end
-  
+   
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 } # Change the host and port as needed
+
 end

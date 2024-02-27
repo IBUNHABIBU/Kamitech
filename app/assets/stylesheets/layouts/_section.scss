@@ -93,13 +93,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem;
 
     h4 {
         color: #333;
-        margin-bottom: 1rem;
-        border-bottom: 1rem solid goldenrod;
+        margin: 2rem;
+        font-size: $font-size-h6;
+        border-bottom: 0.4rem solid goldenrod;
         width: fit-content;
+        padding-bottom: 2rem;
     }
 
     &__item {

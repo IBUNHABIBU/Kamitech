@@ -119,7 +119,6 @@
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
-
             // make it unaccessible to mouce and keyboard
             // pointer-events: none;
 
@@ -127,7 +126,6 @@
             // visibility: hidden;
             transform: translate(100%, -100%);
             position: absolute;
-            top: -2rem;
             left: 0;
             flex-direction: column;
             width: 100%;
