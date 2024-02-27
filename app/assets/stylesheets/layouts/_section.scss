@@ -89,7 +89,20 @@
     }
 }
 
-.partners__item {
-    border: 2px solid gray;
-    width: 100%;
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    h4 {
+        color: #333;
+        margin-bottom: 1rem;
+        border-bottom: 1rem solid goldenrod;
+        width: fit-content;
+    }
+
+    &__item {
+        border: 1px solid #666;
+    }
 }
