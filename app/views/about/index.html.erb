@@ -14,8 +14,12 @@
                 <p>Lorem ip  sum, dolor sit amet consectetur adipisicing elit. Ipsa.</p>
         </div>   
         <div class="about_images">
-        <img src="company.jpg" alt="company">
-        <img src="ceo.jpg" alt="ceo">
+        <% @hero_images.each do |hero_image| %>
+            <% images = hero_image.images.limit(2) %>
+            <% images.each do |image| %>
+                <%= image_tag image, class: "slider__img" %>
+            <% end %>
+        <% end %>
         </div>
     </div>
 
