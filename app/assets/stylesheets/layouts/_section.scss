@@ -21,11 +21,8 @@
             flex-direction: column;
         }
 
-        .btn--small {
-            @include respond(phone) {
-                width: 50%;
-                align-self: flex-end;
-            }
+        @include respond(tab-port) {
+            flex-direction: column;
         }
 
         h6 {
