@@ -5,7 +5,7 @@
     overflow: hidden;
 
     @include respond(phone) {
-        height: 40vh;
+        height: 70vh;
     }
 
     .overlay {

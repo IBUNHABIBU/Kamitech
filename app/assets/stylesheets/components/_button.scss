@@ -36,6 +36,13 @@
     &--border {
         border: 1px solid #276988;
     }
+
+    &--mob {
+        @include respond(phone) {
+        width: 90%;
+        font-size: 0.9rem;
+        }
+    }
 }
 
 .btn-group {
