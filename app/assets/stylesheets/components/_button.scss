@@ -1,6 +1,5 @@
 .btn {
     background-color: $color-white;
-    width: 50%;
     outline: none;
     border: none;
     font-size: 1.4rem;
@@ -39,7 +38,7 @@
 
     &--mob {
         @include respond(phone) {
-        width: 80%;
+        width: 100%;
         font-size: 0.9rem;
         align-self: flex-end;
         }
@@ -50,4 +49,5 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    gap: 1rem;
 }

@@ -59,11 +59,12 @@
         margin: 1rem;
         gap: 1rem;
 
-        .fa-phone-rotary, .fa-screwdriver-wrench,
-        .fa-hand-holding-circle-dollar
+        .fa-screwdriver-wrench, .fa-truck-fast,
+        .fa-medal, .fa-phone-volume, .fa-business-time,
+        .fa-money-check-dollar
          {
             display: inline-block; 
-            border: 2px solid white; 
+            border: 1px solid #888; 
             border-radius: 50%; 
             font-size: 2rem;
             padding: 2rem; 
