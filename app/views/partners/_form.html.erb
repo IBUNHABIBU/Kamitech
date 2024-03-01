@@ -13,18 +13,21 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :Title, style: "display: block" %>
-    <%= form.text_field :Title %>
+  <div class="input-box">
+      <%= form.text_field :Title, required: "required" %>
+      <span>Title</span>
+      <i></i>
   </div>
-  <div>
-  <%= form.label :upload_image, style: "display: block" %>
-  <%= form.file_field :image %>
-</div>
+  <div class="input-box">
+      <%= form.text_field :Description, required: "required" %>
+      <span>Description</span>
+      <i></i>
+  </div>
+  <div class="input-box">
+  <%= form.file_field :image, required: "required" %>
+  </div>
+<%= form.submit "Create", class: "btn btn--mid" %>
 
-  <div>
-    <%= form.submit %>
-  </div>
 <% end %>
   </div>
 </div>

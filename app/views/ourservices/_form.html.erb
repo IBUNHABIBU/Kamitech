@@ -13,24 +13,24 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :Title, style: "display: block" %>
-    <%= form.text_field :Title %>
+  <div class="input-box">
+    <%= form.text_field :Title, required: "required" %>
+    <span>Title</span>
+    <i></i>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+  <div class="input-box">
+    <%= form.text_field :description, required: "required" %>
+    <span>Description</span>
+    <i></i>
   </div>
 
-  <div>
-  <%= form.label :upload_image, style: "display: block" %>
-  <%= form.file_field :image %>
-</div>
-
-  <div>
-    <%= form.submit %>
+  <div class="input-box">
+    <%= form.file_field :image, required: "required" %>
+    <span>Upload Image</span>
+    <i></i>
   </div>
+      <%= form.submit "Upload", class: "btn btn--mid" %>
 <% end %>
   </div>
 </div>
