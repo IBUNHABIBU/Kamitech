@@ -34,7 +34,7 @@
 
 .why {
     text-align: center;
-    background-color: rgb(36, 36, 36);
+    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.622), rgba(34, 34, 34, 0.676), rgba(85, 85, 84, 0.776)), url('./techbg.jpg');
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
         font-size: $font-size-h6;
         color: white;
         padding-bottom: 1rem;
-        border-bottom: 0.09rem solid goldenrod;
+        border-bottom: 0.2rem solid goldenrod;
         letter-spacing: 0.5rem;
         padding-top: 2rem;
         width: fit-content;
@@ -97,9 +97,9 @@
         color: #333;
         margin: 2rem;
         font-size: $font-size-h6;
-        border-bottom: 0.4rem solid goldenrod;
+        border-bottom: 0.28rem solid goldenrod;
         width: fit-content;
-        padding-bottom: 2rem;
+        padding-bottom: 1.2rem;
     }
 
     &__item {
