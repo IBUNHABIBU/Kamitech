@@ -49,20 +49,23 @@
     }
 
     .about_images {
-      flex: 1;
-      display: flex;
-      justify-content: space-between;
-
+      display: inline-block;
       img {
-        width: 50%; /* Adjust according to your need */
-        border-radius: 8px;
-        border: 2px solid #fff;
+        width: 60%;
+        height: 80vh;
+        border-radius: 12px;
+        border: 3px solid #fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
+      img:nth-child(1) {
+        transform: translateY(2%) scale(0.8);
+        z-index: 454;
+      }
+
       img:nth-child(2) {
-        transform: rotate(-45deg) translateY(-8rem);
-        z-index: -1;
+        transform: rotate(-15deg) translate(100%, -90%) scale(0.9);
+       
       }
     }
   }
