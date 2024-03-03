@@ -5,21 +5,27 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit.</p>
     </div>
     <div class="about__content">
-        <div class="about_text">
-            <h5>We are increasing bussiness success with the technology</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio molestiae ab! Soluta, impedit perspiciatis! Voluptas magni enim nulla reprehenderit neque, sequi atque aperiam fugiat sapiente quis eaque ipsam sunt nostrum, tempora unde similique corporis quasi nesciunt at ullam odio exercitationem, earum excepturi? In mollitia id ea pariatur iusto asperiores eligendi illo exercitationem similique, dicta quod doloribus deserunt? Qui officiis cumque, voluptatem ullam vero quis dignissimos molestias, dolorum sunt repudiandae fugit 
-                earum assumenda, sit illum dicta eum ducimus!</p>
-            
-                <p>Lorem ip  sum, dolor sit amet consectetur adipisicing elit. Ipsa.</p>
-        </div>   
-        <div class="about_images">
-        <% @hero_images.each do |hero_image| %>
-            <% images = hero_image.images.limit(2) %>
-            <% images.each do |image| %>
-                <%= image_tag image, class: "slider__img" %>
-            <% end %>
-        <% end %>
+       <div class="desktop-6 phone-12 tab-port-12">
+    
+            <div class="about_text">
+                <h5>We are increasing bussiness success with the technology</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio molestiae ab! Soluta, impedit perspiciatis! Voluptas magni enim nulla reprehenderit neque, sequi atque aperiam fugiat sapiente quis eaque ipsam sunt nostrum, tempora unde similique corporis quasi nesciunt at ullam odio exercitationem, earum excepturi? In mollitia id ea pariatur iusto asperiores eligendi illo exercitationem similique, dicta quod doloribus deserunt? Qui officiis cumque, voluptatem ullam vero quis dignissimos molestias, dolorum sunt repudiandae fugit
+                    earum assumenda, sit illum dicta eum ducimus!</p>
+    
+                    <p>Lorem ip  sum, dolor sit amet consectetur adipisicing elit. Ipsa.</p>
+            </div>
+       </div>
+
+        <div class="desktop-6 phone-12 tab-port-6">
+            <div class="about_images">
+                <% @hero_images.each do |hero_image| %>
+                    <% images = hero_image.images.limit(2) %>
+                    <% images.each do |image| %>
+                        <%= image_tag image, class: "about__img" %>
+                    <% end %>
+                <% end %>
+            </div>
         </div>
     </div>
 
