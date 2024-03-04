@@ -1,7 +1,7 @@
 .form {
     position: relative;
     @include width_and_height(30%, 60vh);
-    background-color: $form-bg;
+    background-color: $color-tertiary;
     overflow: hidden;
 
     &--mid {
@@ -36,7 +36,7 @@
     &__container {
         position: absolute;
         inset: 2px;
-        background-color: $form-bg;
+        background-color: $color-tertiary;
         border-radius: 8px;
         z-index: 10;
         padding: 40px 50px;

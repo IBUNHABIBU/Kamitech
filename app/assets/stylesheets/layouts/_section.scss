@@ -103,6 +103,11 @@
     }
 
     &__item {
-        border: 1px solid #666;
+        border: 0.5px solid rgba(136, 136, 136, 0.272);
+        height: 12rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
