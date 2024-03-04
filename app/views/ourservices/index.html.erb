@@ -1,13 +1,11 @@
 <div class="service" id='service'>
-    <h4>OUR SERVICES</h4>
+    <h1>OUR SERVICES</h1>
     <div class="row">
     <% @ourservices.each do |service| %>
         <div class="desktop-4 tab-port-6 tab-land-6 phone-12">
             <div class="service__item">
             <%= link_to ourservice_path(service) do %>
-                <%= link_to ourservice_path(service) do %>
                     <%= image_tag service.image, class: "service__img" %>
-                <% end %>
                 <div class="service__content">
                     <h5 class="service__title">
                         <%= service.Title %>
