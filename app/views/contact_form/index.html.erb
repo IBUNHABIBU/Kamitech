@@ -2,7 +2,7 @@
 
 <div class="contact-container">
   <div class="contact-form">
-  <%= form_for(@message, data: { turbo: false }, html: { class: "fm" }) do |form|%>
+  <%= form_for(@message, url: contact_form_create_path, method: :post, html: { class: "fm" }) do |form|%>
      
       <%= render "shared/errors", object: @message %>
       

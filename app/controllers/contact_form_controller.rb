@@ -6,7 +6,7 @@ class ContactFormController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.valid?
-      ContactFormMailer.with(message: @message).contact_email.deliver_now
+      ContactFormMailer.contact_email(@message).deliver_now
       redirect_to root_path, notice: "Thank you for contact us! We will get back to you soon"
     else
       flash[:alert] = "Please fill in all fields."
