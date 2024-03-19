@@ -23,6 +23,11 @@
 .error{
     border-left: 3px solid #ff355b;
 }
+
+.alert{
+    border-left: 3px solid #ff355b;
+}
+
 .info{
     border-left: 3px solid #2F86EB;
 }
@@ -30,6 +35,10 @@
     border-left: 3px solid #FFC021;
 }
 .error i{
+    color: #ff355b;
+}
+
+.alert i{
     color: #ff355b;
 }
 .info i{

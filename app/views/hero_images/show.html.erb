@@ -2,7 +2,6 @@
 <%= render @hero_image %>
 <strong> Created by <%= @hero_image.user.email %> </strong>
 <div>
-  <%= link_to "Back to hero images", hero_images_path %>
 
-  <%= button_to "Destroy this hero image", @hero_image, method: :delete %>
+  <%= button_to "Delete images", @hero_image, method: :delete, class: "btn--dash" %>
 </div>

@@ -28,6 +28,10 @@
           <li>
             <%= link_to 'Contact', contact_us_path, class: "header__menu__item" %>
           </li>
+        <% if current_user %>
+          <%= link_to 'Dashboard', kashg_path, class: "btn--dash" %>
+          <%= button_to 'logout', logout_path, method: :delete, class: "btn--dash" %>
+          <% end %>
         </ul>
    </nav>
 </header>

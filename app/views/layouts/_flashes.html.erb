@@ -1,5 +1,5 @@
 <% flash.each do |key, value|  %>
-  <div class="wrapper">
+  <div class="wrapper" data-controller="toast">
     <div class="toast success">
         <div class="outer-container">
         <i class="fa-solid fa-circle-check"></i>
@@ -7,7 +7,7 @@
         <div class="inner-container">          
           <%= content_tag(:p, value, :class => "flash #{key}") %>
         </div>
-        <button>&times;</button>
+        <button data-action="click->toast#hide">&times;</button>
     </div>
   </div>
 <% end %>
