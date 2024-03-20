@@ -15,3 +15,6 @@ application.register("pong", PongController)
 
 import SliderController from "./slider_controller"
 application.register("slider", SliderController)
+
+import ToastController from "./toast_controller"
+application.register("toast", ToastController)
