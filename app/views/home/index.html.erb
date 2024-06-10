@@ -15,7 +15,7 @@
         
             <div class="service__item">
             <%= link_to ourservices_path do %>
-                <%= image_tag service.image, class: "service__img" %>
+                <%= image_tag service.image, class: "service__img" if service.image.present? %>
                 <div class="service__content">
                     <h5 class="service__title">
                         <%= service.Title %>
