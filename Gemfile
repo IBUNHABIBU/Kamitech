@@ -92,3 +92,5 @@ gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 gem "uri", "~> 0.13.0"
 
 gem "dartsass-rails", "~> 0.5.0"
+
+gem "kamal", "~> 2.3.0"
