@@ -17,15 +17,16 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: localhost
-  username: <%= Rails.application.credentials.db_name %>
-  password: <%= Rails.application.credentials.db_pswd %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
+  
+  host: localhost
+  username: <%= Rails.application.credentials.db_name %>
+  password: <%= Rails.application.credentials.db_pswd %>
   database: kamich_development
 
   # The specified database role being used to connect to postgres.
@@ -85,5 +86,6 @@ test:
 production:
   <<: *default
   database: kamich
-  username: postgres
-  password: <%= ENV["RAILSTARTER_DATABASE_PASSWORD"] %>
+  username: <%= ENV["POSTGRES_USER"] %>
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  host: kamich-db
