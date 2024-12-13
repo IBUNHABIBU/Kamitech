@@ -1,0 +1,1 @@
+CREATE DATABASE kamich_production;
