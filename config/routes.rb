@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   resources :hero_images
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
   # get 'sessions/new'
