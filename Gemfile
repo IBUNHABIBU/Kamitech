@@ -7,7 +7,10 @@ ruby '3.3.3'
 gem 'rails', '~> 8.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem 'sprockets-rails'
+# gem 'sprockets-rails'
+# Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
+gem "thruster", require: false
+
 
 gem 'base64'
 gem 'bigdecimal'
@@ -28,7 +31,8 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem 'cssbundling-rails'
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
+gem "propshaft"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
@@ -82,10 +86,6 @@ end
 
 
 gem "net-http"
-gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
 gem 'ed25519', '>= 1.2', '< 2.0'
 gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 
