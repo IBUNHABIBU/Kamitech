@@ -19,7 +19,7 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 6.4', '>= 6.4.2'
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
-gem 'jsbundling-rails'
+# gem 'jsbundling-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
@@ -94,3 +94,7 @@ gem "uri", "~> 0.13.0"
 gem "dartsass-rails", "~> 0.5.0"
 
 gem "kamal", "~> 2.3.0"
+
+# Add importmap-rails
+gem 'importmap-rails'
+
