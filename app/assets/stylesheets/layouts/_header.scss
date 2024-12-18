@@ -231,5 +231,9 @@ nav {
         color: #333;
         font-size: 1.6rem;
     }
+
+    @include respond(phone) {
+        display: none;
+    }
 }
 
