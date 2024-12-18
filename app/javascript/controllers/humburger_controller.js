@@ -10,9 +10,11 @@ export default class extends Controller {
 
   toggle() {
     this.element.classList.toggle("nav-open");
+    console.log(this.element);
   }
 
   removenav() {
     this.element.classList.toggle("nav-open");
+    console.log("remove", this.element)
   }
 }
