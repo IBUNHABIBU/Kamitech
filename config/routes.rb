@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :projects
   resources :ourservices
   
-  get 'ourservices', to: 'ourservice#index', as: 'about_kamich_technologies_tz'
+  get 'ourservices', to: 'ourservice#index', as: 'kamich_technologies_tz_services'
   
   get 'kashg', to: 'cpanel#index', as: 'kashg'
   resources :hero_images
