@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'contact_form/new'
   post 'contact_form/create'
-  get 'about_us', to: 'about#index', as: 'about_us'
+  get 'about_us', to: 'about#index', as: 'about_kamich_technologies'
   resources :partners
   resources :projects
   resources :ourservices

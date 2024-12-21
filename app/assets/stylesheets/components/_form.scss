@@ -1,5 +1,5 @@
 .form {
-    position: relative;
+    position: absolute;
     @include width_and_height(60%, 60vh);
     background-color: $color-tertiary;
     overflow: hidden;
