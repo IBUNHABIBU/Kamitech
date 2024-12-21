@@ -1,14 +1,20 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Projects</h1>
-
-<div id="projects">
-  <% @projects.each do |project| %>
-    <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
-  <% end %>
+<div class="service" id='service'>
+    <h1>OUR SERVICES</h1>
+    <div class="row">
+    <% @projects.each do |project| %>
+        <div class="desktop-4 tab-port-6 tab-land-6 phone-12">
+            <div class="service__item">
+            <%= link_to project_path(project) do %>
+                    <%= image_tag service.image, class: "service__img" %>
+                <div class="service__content">
+                    <h5 class="service__title">
+                        <%= project.Title %>
+                    </h5>
+                    <p class="service__desc"><%= project.description %></p>
+                </div>
+            <% end %>
+            </div>
+        </div>
+    <% end %>
+    </div>
 </div>
-
-<%= link_to "New project", new_project_path %>
