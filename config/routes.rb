@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contact_us', to: 'contact_form#index', as: 'contact_us'
+  get 'contact_kamich_technologies_tz', to: 'contact_form#index', as: 'contact_us'
 
   get 'contact_form/new'
   post 'contact_form/create'
