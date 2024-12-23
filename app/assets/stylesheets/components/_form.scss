@@ -1,6 +1,12 @@
+@use '../mixins/width_and_height' as dimension;
+@use '../mixins/center' as alignment;
+@use '../config/variables';
+
 .form {
-    position: absolute;
-    @include width_and_height(60%, 60vh);
+    
+    @include dimension.width_and_height(60%, 60vh);
+    @include alignment.centreposition;
+
     background-color: $color-tertiary;
     overflow: hidden;
 
