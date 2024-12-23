@@ -5,12 +5,16 @@
         <div class="desktop-4 tab-port-6 tab-land-6 phone-12">
             <div class="service__item">
             <%= link_to project_path(project) do %>
-                    <%= image_tag project.image, class: "service__img" %>
+                     <% if project.image.attached? %>
+                        <%= image_tag project.image, class: "service__img" %>
+                    <% else %>
+                        <h6>Hello</h6>
+                    <% end %>
                 <div class="service__content">
                     <h5 class="service__title">
-                        <%= project.Title %>
+                        <%= project.title %>
                     </h5>
-                    <p class="service__desc"><%= project.description %></p>
+                    <p class="service__desc"><%= project.descrition %></p>
                 </div>
             <% end %>
             </div>
