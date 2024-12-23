@@ -98,3 +98,5 @@ gem "kamal", "~> 2.3.0"
 # Add importmap-rails
 gem 'importmap-rails'
 
+gem 'friendly_id', '~> 5.5.0'
+
