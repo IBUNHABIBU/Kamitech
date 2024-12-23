@@ -6,7 +6,7 @@
     
     @include dimension.width_and_height(60%, 60vh);
     @include alignment.centreposition;
-
+    z-index: 7;
     background-color: $color-tertiary;
     overflow: hidden;
 
@@ -175,4 +175,5 @@
     z-index: 100;
     font-weight: bolder;
     font-size: 1.6rem;
+    background-color: $color-tertiary;
 }
