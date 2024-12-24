@@ -9,12 +9,11 @@
     z-index: 7;
     background-color: variables.$color-tertiary;
     overflow: hidden;
+    margin: 1rem auto;
 
     &--mid {
         @include dimension.width_and_height($height:74vh);
     }
-
-    margin: 1rem auto;
 
     &::before {
         content: "";
