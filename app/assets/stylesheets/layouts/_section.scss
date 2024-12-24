@@ -1,11 +1,14 @@
+@use '../mixins/media';
+@use '../config/variables' as var;
+
 .section {
     width: 100%;
     height: 100%;
 
     h1 {
         font-weight: 700;
-        line-height: $line-height-body;
-        color: $color-text-section;
+        line-height: var.$line-height-body;
+        color: var.$color-text-section;
         text-transform: uppercase;
     }
 
@@ -13,40 +16,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: $space-m;
-        padding: $space-m;
-        background-color: $main-color;
+        gap: var.$space-m;
+        padding: var.$space-m;
+        background-color: var.$main-color;
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             flex-direction: column;
             align-items: flex-end;
         }
 
-        @include respond(tab-port) {
+        @include media.respond(tab-port) {
             flex-direction: column;
             align-items: flex-end;
         }
 
-        @include respond(tab-land) {
+        @include media.respond(tab-land) {
             flex-direction: column;
             align-items: flex-end;
         }
 
         h6 {
             color: white;
-            font-size: $font-size-h6;
+            font-size: var.$font-size-h6;
         }
 
         .btn--mob {
-            @include respond(phone) {
+            @include media.respond(phone) {
                 align-self: flex-end;
             }
 
-            @include respond(tab-land) {
+            @include media.respond(tab-land) {
                 align-self: flex-end;
             }
 
-             @include respond(tab-land) {
+             @include media.respond(tab-land) {
                 align-self: flex-end;
             }
         }
@@ -65,7 +68,7 @@
 
     &__title {
         text-transform: uppercase;
-        font-size: $font-size-h6;
+        font-size: var.$font-size-h6;
         color: white;
         padding-bottom: 1rem;
         border-bottom: 0.2rem solid goldenrod;
@@ -93,7 +96,7 @@
 
         h4 {
             color: white;
-            font-size: $font-size-h6;
+            font-size: var.$font-size-h6;
         }
 
         .content {
@@ -117,7 +120,7 @@
     h4 {
         color: #333;
         margin: 2rem;
-        font-size: $font-size-h6;
+        font-size: var.$font-size-h6;
         border-bottom: 0.28rem solid goldenrod;
         width: fit-content;
         padding-bottom: 1.2rem;
