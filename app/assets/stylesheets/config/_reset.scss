@@ -27,17 +27,17 @@ body {
   font-family: var.$font-family-lato;
   font-size: 62.5%;
   overflow-x: hidden;
-  // @include respond(tab-land) {
-  //     font-size: 56.25%;
-  // }
+  @include media.respond(tab-land) {
+      font-size: 56.25%;
+  }
 
-  // @include respond(tab-port) {
-  //     font-size: 50%;
-  // }
+  @include media.respond(tab-port) {
+      font-size: 50%;
+  }
 
-  // @include respond(big-desktop) {
-  //     font-size: 75%;
-  // }
+  @include media.respond(big-desktop) {
+      font-size: 75%;
+  }
 }
 
 img,
