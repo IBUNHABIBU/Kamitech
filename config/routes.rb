@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'contact_kamich_technologies_tz', to: 'contact_form#index', as: 'contact_us'
+  get 'contact-kamich-technologies', to: 'contact_form#index', as: 'contact_us'
 
   get 'contact_form/new'
   post 'contact_form/create'
-  get 'about_kamich_technologies_tz', to: 'about#index', as: 'about_us'
+  get 'about-kamich-technologies', to: 'about#index', as: 'about_us'
   resources :partners
-  resources :projects, path: 'kamich_technologies_tz_projects'
-  resources :ourservices, path: 'kamich_technologies_tz_services'
+  resources :projects, path: 'kamich-technologies-projects'
+  resources :ourservices, path: 'kamich-technologies-services'
 
   get 'kashg', to: 'cpanel#index', as: 'kashg'
   resources :hero_images
