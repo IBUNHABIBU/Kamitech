@@ -1,6 +1,8 @@
+@use '../config/variables' as var;
+
 footer {
     h3 {
-        color: $main-color;
+        color: var.$main-color;
     }
 }
 .interesting-infos {
@@ -33,7 +35,7 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 10px;
-    font-size: $font-size-xs;
+    font-size: var.$font-size-xs;
 }
 
 .footer-bottom {
@@ -44,5 +46,5 @@ footer {
 }
 
 .footer-section p {
-    font-size: $font-size-xs;
+    font-size: var.$font-size-xs;
 }

@@ -1,3 +1,6 @@
+@use '../config/variables' as var;
+@use '../mixins/media';
+
 .header {
     position: relative;
     max-width: 100vw;
@@ -12,13 +15,13 @@
         justify-content: space-between;
         background-color: white;
         color: black;
-        font-size: $font-size-xl;
+        font-size: var.$font-size-xl;
 
         .fa-xmark {
             display: none;
         }
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             padding-top: 1rem;
             padding-bottom: 0;
         }
@@ -52,11 +55,11 @@
     &__btn {
         display: none;
 
-        @include respond(phone) {
+        @include media.respond(phone) {
             display: flex;
         }
 
-        @include respond(tab-port) {
+        @include media.respond(tab-port) {
             display: flex;
         }
         .button {
@@ -103,14 +106,14 @@
 
     ul {
         list-style: none;
-        background-color: $main-color;
+        background-color: var.$main-color;
         
         li {
-            padding: $space-xs $space-m;
+            padding: var.$space-xs var.$space-m;
             transition: background 0.6s ease-in-out;
 
             &:hover {
-                background-color: $color-tertiary;
+                background-color: var.$color-tertiary;
             }
         }
     }
@@ -119,7 +122,7 @@
     &__menu {
         display: flex;
         align-items: center;
-        @include respond(phone) {
+        @include media.respond(phone) {
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -136,7 +139,7 @@
             transition: all 0.5s ease-in-out;
         }
 
-        @include respond(tab-port) {
+        @include media.respond(tab-port) {
             // Display: none; allows no transition at all
             // instead use opacity:0;
             opacity: 0%;
@@ -156,11 +159,11 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-           @include respond(phone) {
+           @include media.respond(phone) {
             width: 100%;
            }
 
-           @include respond(tab-port) {
+           @include media.respond(tab-port) {
             width: 100%;
            }
         }
@@ -168,8 +171,8 @@
     }
     a {
         text-decoration: none;
-        color: $color-white;
-        font-size: $font-size-xs;
+        color: var.$color-white;
+        font-size: var.$font-size-xs;
     }
 }
 
@@ -181,11 +184,11 @@
     cursor: pointer;
     display: none;
 
-    @include respond(phone) {
+    @include media.respond(phone) {
         display: block;
     }
 
-    @include respond(tab-port) {
+    @include media.respond(tab-port) {
         display: block;
     }
 
@@ -232,7 +235,7 @@ nav {
         font-size: 1.6rem;
     }
 
-    @include respond(phone) {
+    @include media.respond(phone) {
         display: none;
     }
 }
